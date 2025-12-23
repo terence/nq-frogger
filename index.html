@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Frogger</h1>
+    <div id="controls" style="margin: 0 auto 16px auto; width: 600px; display: flex; align-items: center; justify-content: center; gap: 16px;">
+        <label for="speedRange" style="color:#fff;">Game Speed:</label>
+        <input type="range" id="speedRange" min="4" max="30" value="12" step="1">
+        <span id="speedValue" style="color:#7fff7f; font-weight:bold;">12</span>
+    </div>
+    <canvas id="gameCanvas" width="600" height="600"></canvas>
+    <script src="scripts/game.js"></script>
+</body>
+</html>
